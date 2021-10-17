@@ -142,6 +142,8 @@ void editsecurity(vector<security>&);
 void moreinfodriver(vector<driver>);
 void moreinfoloader(vector<loader>);
 void moreinfosecurity(vector<security>);
+void menuiconbox();
+void menuiconother();
 //#ifndef LB_MG_3S_4_CLASS_H
 //#define LB_MG_3S_4_CLASS_H
 
