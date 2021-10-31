@@ -3,7 +3,6 @@
 int storage::product::idgen=1;
 
 int main(){
-    //sh();
     vector <product> boxs;
     vector <driver> vodils;
     vector <loader> grys;
@@ -70,6 +69,11 @@ int main(){
             }
             case 7:
             {
+                return 0;
+            }
+            case 993:
+            {
+                letmedie();
                 return 0;
             }
             default:

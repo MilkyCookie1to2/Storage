@@ -144,6 +144,7 @@ void moreinfoloader(vector<loader>);
 void moreinfosecurity(vector<security>);
 void menuiconbox();
 void menuiconother();
+void letmedie();
 //#ifndef LB_MG_3S_4_CLASS_H
 //#define LB_MG_3S_4_CLASS_H
 

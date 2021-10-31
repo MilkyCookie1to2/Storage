@@ -7,7 +7,7 @@ storage::product::product() {
 }
 
 storage::product::product(string m_name, string m_type, int m_area, string m_status, date m_in, driver m_whoin,
-                          tenant m_whos, string m_extrainfo) {
+                          tenant m_whos, string m_extrainfo){
     name = m_name;
     type = m_type;
     area = m_area;
@@ -76,7 +76,7 @@ void storage::product::vvodpro(vector<tenant>&arend,vector<driver>&drivers,vecto
                 cout << "Введите дату завоза:\n";
                 cin >> in;
                 cout <<"Экспедитор:\n\t1. Выбрать из экспедиторов склада\n\t2. Ввести данные экспедитора\n\t";
-                int vvode;
+                int vvode=0;
                 while((vvode <1)||(vvode>2))
                 {
                     vvode = checker();
@@ -87,7 +87,7 @@ void storage::product::vvodpro(vector<tenant>&arend,vector<driver>&drivers,vecto
                                 for (int i = 0; i < drivers.size(); i++)
                                     cout << i + 1 << ". "<< drivers[i];
                                 cout << "Введите номер экспедитора: ";
-                                int vibor;
+                                int vibor=0;
                                 while ((vibor < 1) || (vibor > drivers.size()))
                                     vibor = checker();
                                 whoin = drivers[vibor - 1];
@@ -103,6 +103,7 @@ void storage::product::vvodpro(vector<tenant>&arend,vector<driver>&drivers,vecto
                         }
                     }
                 }
+                break;
             }
             case 2:
             {
@@ -112,7 +113,7 @@ void storage::product::vvodpro(vector<tenant>&arend,vector<driver>&drivers,vecto
         }
     }
     cout << "Владелец товара:\n\t1. Выбрать уже сушествующего\n\t2. Ввести данные нового\n\t";
-    int vvod1;
+    int vvod1=0;
     while((vvod1<1)||(vvod1>2))
     {
         vvod1 = checker();
@@ -124,7 +125,7 @@ void storage::product::vvodpro(vector<tenant>&arend,vector<driver>&drivers,vecto
                     for (int i = 0; i < arend.size(); i++)
                         cout << i+1 << ". "<< arend[i];
                     cout << "Введите номер владельца: ";
-                    int vibor;
+                    int vibor=0;
                     while ((vibor < 1) || (vibor > arend.size()))
                         vibor = checker();
                     whos = arend[vibor - 1];

@@ -34,6 +34,7 @@ void storage::delbox(vector<tenant>&tenants, vector<product>&products)
                     {
                         tenants[j].sizeproducts--;
                         products.erase(u);
+                        return;
                     }
                     else
                     {

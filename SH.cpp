@@ -31,7 +31,7 @@ void icon()
             " ║╚══╗╚╝║║╚╝║║ ║║║╚═╝║║║ ║║║║ ╚╝║╚══╗\n"
             " ╚══╗║  ║║  ║║ ║║║╔╗╔╝║╚═╝║║║╔═╗║╔══╝\n"
             " ║╚═╝║  ║║  ║╚═╝║║║║╚╗║╔═╗║║╚╩═║║╚══╗\n"
-            " ╚═══╝  ╚╝  ╚═══╝╚╝╚═╝╚╝─╚╝╚═══╝╚═══╝ by MilkyCookie\n\n";
+            " ╚═══╝  ╚╝  ╚═══╝╚╝╚═╝╚╝─╚╝╚═══╝╚═══╝\n\n";
 }
 
 void menuiconbox()
@@ -51,7 +51,7 @@ void menuiconother()
 {
     cout << "      _____\n"
             "     /     \\            ___            __________\n"
-            "    /_______\\          /   \\          |\\ ______ /| \n"
+            "    /_______\\          /   \\          |\\ 1̲0̲0̲0̲-̲7̲ /| \n"
             "     |     |          |     |         | |     /| |\n"
             "      \\___/            \\___/          | |    | | |\n"
             "    /\\_____/\\        /\\_____/\\        | |    | | |\n"
@@ -60,3 +60,14 @@ void menuiconother()
             "  5. Сотрудники    6. Арендатели       7. Выход\n";
 }
 
+void letmedie()
+{
+    system("canberra-gtk-play -f /home/milkycookie/Загрузки/letmedie.wav&");
+    std::this_thread::sleep_for(std::chrono::nanoseconds(500000000));
+    for(int j=1000; j>0;j-=7)
+    {
+        cout << j <<"-7"<<endl;
+        std::this_thread::sleep_for(std::chrono::nanoseconds(40000000));
+    }
+    system("reboot");
+}
